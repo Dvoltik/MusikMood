@@ -19,6 +19,7 @@ function AddAlbum(){
       <form method="post" onSubmit={handleForward}>
         <label htmlFor='link-input'>
           <input id='input' name='name' placeholder='Name'/>
+          <input id='input' name='artist' placeholder='Artist'/>
           <input id='input' name='Link' placeholder='AlbumLink'/>
           <button type='submit'>Continue</button>
         </label>
