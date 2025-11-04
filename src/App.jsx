@@ -16,26 +16,23 @@ function AddAlbum(){
   }
   return (   
     <div className='addAlbum'>
-      <form method="post" onSubmit={handleForward}>
-        <label htmlFor='link-input'>
-          <input id='input' name='name' placeholder='Name'/>
-          <input id='input' name='artist' placeholder='Artist'/>
-          <input id='input' name='Link' placeholder='AlbumLink'/>
-          <button type='submit'>Continue</button>
-        </label>
+      <form className='inputForm'method="post" onSubmit={handleForward}>
+        <div id='top-row'>
+          <div id='cover-wrapper'>
+            <input type='file' accept='image/*, .pdf' id='input-cover' name='cover' placeholder='cover'/>
+          </div>
+          <div id='meta-inputs'>
+            <p id=''>Add Ablum</p>
+            <input type='text' id='input-name' name='name' placeholder='Name'/>
+            <input type='text' id='input-artist' name='artist' placeholder='Artist'/>
+            <input type='url' id='input-link' name='link' placeholder='AlbumLink'/>
+          </div>
+        </div>
+          <button type='submit' id='submit-input'>Continue</button>     
       </form>
     </div>
   )
 } 
-
-function AddMoods(album){
-  const name = album.name;
-  return (
-    <div className='addMoods'>
-      <p>{album.name}</p>
-    </div>
-  )
-}
 
 function App() {
   return (

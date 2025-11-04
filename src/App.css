@@ -1,18 +1,77 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
 }
 
 .addAlbum{
-  height: 2em;
-  width: 20vw;
+  height: 100vh;
+  width: var(--app-width);
+  display: flex;
+  flex-direction: row;
 }
 
-#input{
+.inputForm{
+  height: 100vh;
+  width: var(--app-width);
+  display: flex;
+  flex-direction: column;
+}
+
+#top-row{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+}
+
+#cover-wrapper{
+  z-index: 1;
+  height: 250px;
+  aspect-ratio: 1/1;
+  background-color: aliceblue;
+  border-radius: 10px;
+  display: flex;
+}
+
+#input-cover{
+  display: flex;
+  z-index: 2;
+  height:100%;
+  width: 100%;
+  
+}
+
+#meta-inputs{
+  display:flex;
+  flex-direction: column;
+  align-self: center;
+  gap: 20px;
+}
+
+#meta-inputs > *{
+  height: var(--text-input-height);
+  width: 20vw;
+  align-self: center;
+}
+#meta-inputs > p{
+  margin-top: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#submit-input{
   height: 2em;
   border-radius: 5px;
   margin-top: 5px;
   margin-bottom: 5px;
+  align-items: center;
+
+  display: flex;
+}
+
+
+:root{
+  --app-width: 40vw;
+  --text-input-height: 2em;
 }
