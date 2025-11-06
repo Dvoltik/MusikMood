@@ -18,15 +18,27 @@ function AddAlbum(){
     <div className='addAlbum'>
       <form className='inputForm'method="post" onSubmit={handleForward}>
         <div id='top-row'>
-          <div id='cover-wrapper'>
-            <input type='file' accept='image/*, .pdf' id='input-cover' name='cover' placeholder='cover'/>
-          </div>
+          <input type='file' accept='image/*, .pdf' id='input-cover' name='cover' placeholder='cover'/>
           <div id='meta-inputs'>
             <p id=''>Add Ablum</p>
             <input type='text' id='input-name' name='name' placeholder='Name'/>
             <input type='text' id='input-artist' name='artist' placeholder='Artist'/>
             <input type='url' id='input-link' name='link' placeholder='AlbumLink'/>
           </div>
+        </div>
+        
+        <div id='mid-row'>
+            <fieldset className='mid-row-wrapper'>
+              <legend>Genres</legend>
+              <table id='genre-wrapper'>
+                <tr>test</tr>
+                <tr>test2</tr>
+              </table>
+            </fieldset>
+            <fieldset className='mid-row-wrapper'>
+              <legend>Moods</legend>
+            </fieldset>
+          
         </div>
           <button type='submit' id='submit-input'>Continue</button>     
       </form>
