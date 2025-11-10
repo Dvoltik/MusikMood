@@ -42,7 +42,7 @@
   display:flex;
   flex-direction: column;
   align-self: center;
-  gap: 20px;
+  gap: 15px;
 }
 
 #meta-inputs > *{
@@ -51,36 +51,54 @@
   align-self: center;
 }
 #meta-inputs > p{
-  margin-top: 0;
+  margin-top: -20px;
+  margin-bottom: 0px;
   font-size: 20px;
   font-weight: bold;
 }
 
-#submit-input{
-  height: 2em;
+.buttons{
   border-radius: 5px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  align-items: center;
-
   display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: blue 0.25s;
 }
 
 #mid-row{
   margin-top: 15px;
   display: flex;
   gap: 10px;
-  height: 100%;
+  height: auto;
+  margin-bottom: 50px;
 }
 
 .mid-row-wrapper{
-  border-radius: 15px 15px 0px 0px;
-  border: 2px solid rgba(87, 87, 87, 0.404);
+  border: 2px solid;
+  border-image: linear-gradient(to bottom, #4d4d4d 0%, #242424 100%) 1;
+  align-content: center;
   width: 45%;
   height: 100%;
   display: flex;
-  
+  flex-direction: column;
 }
+
+.table-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex: 100%;
+}
+.table-wrapper > *{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.table-wrapper > * > *{
+  width: 100%;
+  display: flex;
+}
+
 
 :root{
   --app-width: 40vw;
