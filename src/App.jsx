@@ -24,6 +24,7 @@ function AddAlbum(){
             <input type='text' id='input-name' name='name' placeholder='Name'/>
             <input type='text' id='input-artist' name='artist' placeholder='Artist'/>
             <input type='url' id='input-link' name='link' placeholder='AlbumLink'/>
+            <button onClick={/*make API search with name of album*/}>Search</button>
           </div>
         </div>
         
